@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KITZU'S KITCHEN</title>
+  <style>
+    /* CSS styles for the website */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+    header {
+      background-color: #e88db7;
+      color: #a32c58;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #c77fa9;
+      color: #873663;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      margin: 20px;
+    }
+    footer {
+      background-color: #a35e78;
+      color: #b32676;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KITZU'S KITCHEN</h1>
+  </header>
+  <nav>
+    <a href="#" onclick="showHome()">Home</a>
+    <a href="#" onclick="showCuisine()">Cuisine</a>
+    <a href="#" onclick="showMenu()">Menu</a>
+    <a href="#" onclick="showContact()">Contact</a>
+  </nav>
+  <main id="content">
+    <h2>Welcome to Our Restaurant!</h2>
+    <p>A place where everyone feels your Mom's Magic....</p>
+    <p>Place your order @Swiggy and @Zomato</p>
+  </main>
+  <footer>
+    &copy; 2023 Our Restaurant. All rights reserved.
+  </footer>
+  
+  <script>
+    // JavaScript functions to handle navigation
+    
+    function showHome() {
+      document.getElementById("content").innerHTML = `
+        <h2>Welcome to Our Restaraunt</h2>
+        <p>A place where everyone feels your Mom's Magic....</p>
+        <p>Enjoy your favorite dishes with your friends and familie
+      `;
+    }
+    
+    function showCuisine() {
+      document.getElementById("content").innerHTML = `
+        <h2>Cuisine</h2>
+        <ul>
+          <li>Indian</li>
+          <li>Italin</li>
+          <li>Chinese</li>
+          <li>Continental</li>
+        </ul>
+      `;
+    }
+    function showMenu(){
+        document.getElementById("content").innerHTML = `
+        <h2>Menu</h2>
+        <ul>
+             <li>Pasta</li>
+             <li>Spagetti</li>
+             <li>Lasgane</li>
+             <li>Chole Bhature</li>
+             <li>Kichadi</li>
+             <li>Chicken Biriyani</li>
+             <li>Ginger Chicken</li>
+        </ul> 
+        `;    
+    }
+    function showContact() {
+      document.getElementById("content").innerHTML = `
+        <h2>Contact</h2>
+        <p>Address: 123 Main Street, Thoothukudi</p>
+        <p>Phone: 555-1234</p>
+        <p>Email Id: kkitchen@gmail.com</p>
+      `;
+    }
+  </script>
+</body>
+</html>
